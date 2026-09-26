@@ -1,4 +1,4 @@
-FROM python:3.11-alpine3.23
+FROM python:3.14-alpine3.23
 
 ARG APP_VERSION=0.1.0
 ARG VCS_REF=unknown
