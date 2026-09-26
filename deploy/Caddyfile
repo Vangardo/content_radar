@@ -1,0 +1,4 @@
+{$RADAR_DOMAIN} {
+    reverse_proxy radar:8877
+    header Strict-Transport-Security "max-age=31536000"
+}

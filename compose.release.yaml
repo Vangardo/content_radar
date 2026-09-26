@@ -1,0 +1,4 @@
+# Use with compose.yaml. Pull first, then start with --no-build.
+services:
+  radar:
+    image: ${RADAR_IMAGE:-ghcr.io/vangardo/content_radar:0.1.0}

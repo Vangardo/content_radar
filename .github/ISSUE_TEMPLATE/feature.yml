@@ -1,0 +1,13 @@
+name: Предложение / Feature request
+description: Какую задачу пользователя нужно решить?
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Задача и предлагаемый результат / Problem and desired outcome
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Что пробовали / Alternatives considered

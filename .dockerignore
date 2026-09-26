@@ -1,0 +1,13 @@
+*
+!app/
+!app/**
+!youtube_niche/
+!youtube_niche/**
+!migrations/
+!migrations/**
+!requirements-server.lock
+!topic_aliases.json
+!LICENSE
+!UPSTREAM.md
+**/__pycache__
+**/*.pyc

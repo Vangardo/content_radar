@@ -1,0 +1,2 @@
+# Contributor environment; production images use requirements-server.lock.
+-r requirements-dev.lock

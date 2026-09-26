@@ -1,0 +1,26 @@
+services:
+  radar:
+    build: .
+    restart: unless-stopped
+    init: true
+    ports:
+      - "127.0.0.1:8877:8877"
+    volumes:
+      - radar_data:/data
+    secrets:
+      - radar_server
+    environment:
+      RADAR_TRUSTED_PROXIES: "*"
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 45s
+secrets:
+  radar_server:
+    file: ./deploy/secrets/server.json
+volumes:
+  radar_data:

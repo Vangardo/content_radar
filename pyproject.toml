@@ -1,0 +1,35 @@
+[project]
+name = "content-radar"
+version = "0.1.0"
+description = "Self-hosted YouTube growth research for small channels"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Vangardo"}]
+keywords = ["youtube", "analytics", "small-channels", "shorts", "self-hosted"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Framework :: FastAPI",
+]
+dependencies = [
+  "requests==2.34.2", "fastapi==0.141.1", "uvicorn==0.53.0",
+  "jinja2==3.1.6", "python-multipart==0.0.32", "keyring==25.7.0",
+  "tzdata==2026.4", "cryptography==50.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/Vangardo/content_radar"
+Repository = "https://github.com/Vangardo/content_radar"
+Issues = "https://github.com/Vangardo/content_radar/issues"
+Changelog = "https://github.com/Vangardo/content_radar/blob/main/CHANGELOG.md"
+
+# Source application and container distribution; intentionally not a Python wheel.
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

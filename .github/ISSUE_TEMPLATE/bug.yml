@@ -1,0 +1,22 @@
+name: Ошибка / Bug report
+description: Воспроизводимая ошибка без ключей и личных данных.
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить / Steps to reproduce
+      description: Укажите ожидаемый и фактический результат. Не прикладывайте БД и токены.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия, ОС и способ запуска / Version, OS, installation
+      placeholder: 'v0.1.0, Ubuntu, Docker / Windows, Python'
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Обезличенная диагностика / Redacted diagnostics
+      description: Удалите API-ключи, cookies, Authorization, имена проектов и приватные запросы.
